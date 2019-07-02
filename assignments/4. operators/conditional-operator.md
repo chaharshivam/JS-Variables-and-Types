@@ -13,15 +13,21 @@
 
 let a = prompt('Enter first number'); 
 let b = prompt('Enter second number');
+let operation = prompt('Enter +, -, * or /');
 
 // Add
-alert(`Sum is ${Number(a) + Number(b)}`);
-// Sub
-alert(`Sub is ${Number(a) - Number(b)}`);
-// Mul
-alert(`Mul is ${Number(a) * Number(b)}`);
-// Div
-alert(`Mul is ${Number(a) / Number(b)}`);
+if (operation == '+') {
+	alert(`Sum is ${Number(a) + Number(b)}`);
+} else if (operation == '-') {
+	alert(`Sub is ${Number(a) - Number(b)}`);
+} else if (operation == '*') {
+	alert(`Mul is ${Number(a) * Number(b)}`);
+} else if (operation == '/') {
+	alert(`Mul is ${Number(a) / Number(b)}`);
+} else {
+	alert('Wrong input!');
+}
+
 
 ```
 
