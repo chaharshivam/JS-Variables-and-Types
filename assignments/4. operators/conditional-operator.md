@@ -9,22 +9,59 @@
     * [ ] Mul
     * [ ] Div
 
+```js
+
+let a = prompt('Enter first number'); 
+let b = prompt('Enter second number');
+let operation = prompt('Enter +, -, * or /');
+
+// Add
+if (operation == '+') {
+	alert(`Sum is ${Number(a) + Number(b)}`);
+} else if (operation == '-') {
+	alert(`Sub is ${Number(a) - Number(b)}`);
+} else if (operation == '*') {
+	alert(`Mul is ${Number(a) * Number(b)}`);
+} else if (operation == '/') {
+	alert(`Div is ${Number(a) / Number(b)}`);
+} else {
+	alert('Wrong input!');
+}
+
+
+```
+
 2. 🎖Write a if else statement which checks if the status is single `console.log` the message `John is single` or else `John is married`
 ```js
 var firstName = 'John';
 var status = 'single';
 // Your code goes here
+if(status == 'single') {
+	console.log('John is single')
+} else {
+	console.log('John is married');
+}
 ```
 
 3. 🎖Write a JavaScript program that takes two `integers` from user (using prompt) and alerts the larger number.
 ```js
 // your code goes here
+let a = prompt('Enter first number');
+let b = prompt('Enter second number');
+
+(a > b) ? alert(`${a} is greater`) : alert(`${b} is greater`);
+
 ```
 
 4. 🎖Write a JavaScript conditional statement to find the sign (+, -) of product of three numbers. Take those three numbers from user using `prompt`. Display an alert box with the specified sign.
 
 ```js
 // Your code goes here
+let a = prompt('Enter first number');
+let b = prompt('Enter second number');
+let c = prompt('Enter third number');
+
+(a*b*c < 0) ? alert('sign is negative') : alert('sign is positive');
 ```
 
 ## Switch Statement
@@ -43,7 +80,36 @@ Take a number value from user and alert the message if it matches the conditions
 * [ ] NINE, if `number` is equal to 9.
 * [ ] PLEASE TRY AGAIN, if  is none of the above.
 ```js
-// Your code goes here
+let number = prompt('Enter a number');
+switch(Number(number)) {
+	case 1: 
+		alert('ONE');
+		break;
+	case 2: 
+		alert('TWO');
+		break;
+	case 3: 
+		alert('THREE');
+		break;
+	case 4: 
+		alert('FOUR');
+		break;
+	case 5: 
+		alert('FIVE');
+		break;
+	case 6: 
+		alert('SIX');
+		break;
+	case 7: 
+		alert('SEVEN');
+		break;
+	case 8: 
+		alert('EIGHT');
+		break;
+	case 9: 
+		alert('NINE');
+		break;								
+}
 ```
 
 2. 🎖Using switch statement do the following
@@ -58,5 +124,34 @@ Take the value of `marks` (0-100) from user using `prompt` and `alert` the messa
 * [ ] `DD` if `marks` is greater than 30 and less than or equal to 40
 * [ ] `FF` if `marks` is less than or equal to 30
 ```js
-// Your code goes here
+
+	let marks = prompt('Enter your marks');
+	marks = Number(marks);
+	switch(true) {
+		case (marks > 90):
+			alert('AA');
+			break;
+		case (marks > 80 && marks <= 90):
+			alert('AB');
+			break;
+		case (marks > 70 && marks <= 80):
+			alert('BB');
+			break;
+		case (marks > 60 && marks <= 70):
+			alert('BC');
+			break;	
+		case (marks > 50 && marks <= 60):
+			alert('CC');
+			break;	
+		case (marks > 40 && marks <= 50):
+			alert('CD');
+			break;	
+		case (marks > 30 && marks <= 40):
+			alert('DD');
+			break;	
+		case (marks <= 30):
+			alert('FF');
+			break;								
+	}
+
 ```
