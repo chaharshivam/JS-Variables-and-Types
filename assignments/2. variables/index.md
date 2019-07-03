@@ -46,13 +46,13 @@ Solve this using mathematical operations. (+, -, *, / , etc)
 ```js
 var amount = 2080;
 // Define a new variable and store the value that is 80 less then the value of amount.
-let subtractedAmount = (2080 - 80);
+let subtractedAmount = (amount - 80);
 // Define a new variable and store the value that is 200 more then the value of amount.
-let addedAmount = (2080 + 200);
+let addedAmount = (amount + 200);
 // Define a new variable and store the value that is 4 times the value of amount.
-let multipliedAmount = (2080 * 4);
+let multipliedAmount = (amount * 4);
 // Define a new variable and store the reminder when the value of amount is  divided by 21.
-let remainderAmount = (2080 % 21);
+let remainderAmount = (amount % 21);
 ```
 
 Logical Operation:

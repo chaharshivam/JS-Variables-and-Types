@@ -23,7 +23,7 @@ if (operation == '+') {
 } else if (operation == '*') {
 	alert(`Mul is ${Number(a) * Number(b)}`);
 } else if (operation == '/') {
-	alert(`Mul is ${Number(a) / Number(b)}`);
+	alert(`Div is ${Number(a) / Number(b)}`);
 } else {
 	alert('Wrong input!');
 }
